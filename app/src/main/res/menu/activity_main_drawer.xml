@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/changelocation"
+        android:icon="@drawable/location"
+        android:title="Change Location" />
+    <item
+        android:id="@+id/sendinvite"
+        android:icon="@drawable/invite"
+        android:title="Send And Invite" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Sign out" />
+
+
+</menu>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4">
+
+            <ImageView
+                android:id="@+id/adapter_review_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:padding="@dimen/_20sdp"
+                android:src="@drawable/ic_google" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/adapter_review_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:layout_weight="0.8"
+                    android:gravity="center|left|top"
+                    android:text="product name"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/combogrygreen"
+                    android:textSize="@dimen/_18sdp" />
+
+                <TextView
+                    android:id="@+id/adapter_review_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:layout_weight="1.2"
+                    android:gravity="center|right|top"
+                    android:text="00 date"
+                    android:textColor="@color/combogrygreen"
+                    android:textSize="@dimen/_18sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/adapter_review_rating"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressTint="@color/orange"
+                    android:scaleX="0.50"
+                    android:scaleY="0.50"
+                    android:transformPivotX="@dimen/_2sdp"
+                    android:transformPivotY="@dimen/_2sdp"
+                    hedgehog:clickable="false"
+                    hedgehog:halfstart="true"
+                    hedgehog:starCount="5"
+                    hedgehog:starEmpty="@drawable/ic_unfeel"
+                    hedgehog:starFill="@drawable/ic_fill_star"
+                    hedgehog:starHalf="@drawable/ic_half_feel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/adapter_review_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="this is great product.this is great product.this is great product."
+                    android:textColor="@color/combogrygreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_100sdp"
+         android:orientation="vertical"
+         android:weightSum="4">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1">
+
+             <TextView
+                 android:id="@+id/adapter_review_username"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_weight="1"
+                 android:text="b start"
+                 android:textColor="@color/combogrygreen"
+                 android:textSize="@dimen/_18sdp" />
+
+             <TextView
+                 android:id="@+id/adapter_review_date"
+                 android:layout_width="@dimen/_65sdp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:textColor="@color/combogrygreen"
+                 android:textSize="@dimen/_18sdp" />
+         </LinearLayout>
+
+         <com.hedgehog.ratingbar.RatingBar
+             android:id="@+id/adapter_review_rating"
+             style="?android:attr/ratingBarStyleIndicator"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_gravity="left|center|top"
+             android:paddingTop="@dimen/_5sdp"
+             android:layout_weight="2"
+             hedgehog:clickable="false"
+             hedgehog:halfstart="true"
+             hedgehog:starCount="5"
+             android:isIndicator="true"
+             hedgehog:starEmpty="@drawable/ic_unfeel"
+             hedgehog:starFill="@drawable/ic_fill_star"
+             hedgehog:starHalf="@drawable/ic_half_feel"
+             android:progressTint="@color/orange"
+             android:numStars="5"
+             android:scaleX="0.50"
+             android:scaleY="0.50"
+             android:transformPivotX="0dp"
+             android:transformPivotY="0dp" />
+
+         <TextView
+             android:id="@+id/adapter_review_description"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:textColor="@color/combogrygreen"
+             android:singleLine="true"
+             android:textSize="@dimen/_12sdp" />
+
+     </LinearLayout>-->
+</LinearLayout>

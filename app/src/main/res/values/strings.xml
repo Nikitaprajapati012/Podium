@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Amplified</string>
+    <string name="Signin">Sign In</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sendreviewinvite">Send and invite</string>
+    <string name="searchlocation">Search Location</string>
+    <string name="somethingwentwrong">Something went wrong</string>
+    <string name="error">No any Review this Business!!!</string>
+</resources>

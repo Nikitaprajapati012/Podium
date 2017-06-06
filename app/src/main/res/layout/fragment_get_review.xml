@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.emilsjolander.components.StickyScrollViewItems.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    whatever:stuckShadowDrawable="@drawable/sticky_shadow_default">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fullLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_get_review_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@color/colorheader"
+                android:text="Gettel Toyota of Bradenton"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/fragment_get_review_location"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/colorheader"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="6423 14th st w, Bradenton ,FL 34207,United state"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/halfLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="vertical"
+            android:tag="sticky"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/fragment_get_review_titlesticky"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:background="@color/colorheader"
+                android:text="6423 14th st w, Bradenton ,FL 34207,United state"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/fragment_get_review_overall_rating"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:textColor="@color/combogrygreen"
+                android:background="@android:color/white"
+                android:text="Overall Rating" />
+
+            <Button
+                android:id="@+id/fragment_get_review_total_review"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:textColor="@color/combogrygreen"
+                android:background="@android:color/white"
+                android:text="Total Reviews" />
+
+            <Button
+                android:id="@+id/fragment_get_review_review_this_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:textColor="@color/combogrygreen"
+                android:background="@android:color/white"
+                android:text="Review This week" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_get_review_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:dividerHeight="@dimen/_5sdp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
